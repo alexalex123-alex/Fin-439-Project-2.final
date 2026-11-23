@@ -1,0 +1,13 @@
+test_all_feasible_candidates_rank_above_selected (test_project2.ProjectTests.test_all_feasible_candidates_rank_above_selected) ... ok
+test_asof_quarantine_and_stale_signal (test_project2.ProjectTests.test_asof_quarantine_and_stale_signal) ... ok
+test_baseline_failures_and_full_adoption_gate (test_project2.ProjectTests.test_baseline_failures_and_full_adoption_gate) ... ok
+test_cross_asset_variance (test_project2.ProjectTests.test_cross_asset_variance) ... ok
+test_estimates_match_independent_monthly_calculation (test_project2.ProjectTests.test_estimates_match_independent_monthly_calculation) ... ok
+test_invalid_inputs_fail_closed (test_project2.ProjectTests.test_invalid_inputs_fail_closed) ... ok
+test_stress_stop_and_infeasibility (test_project2.ProjectTests.test_stress_stop_and_infeasibility) ... ok
+test_web_output_and_input_validation (test_project2.ProjectTests.test_web_output_and_input_validation) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.904s
+
+OK

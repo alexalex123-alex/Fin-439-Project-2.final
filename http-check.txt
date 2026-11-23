@@ -1,0 +1,9 @@
+/ 200 7170
+/?window=36 200 7138
+/?reserve=80 200 7097
+/output.json 200 8599
+/?cutoff=2026-10-31 200 6901
+/memo 200 4571
+/validation 200 7227
+/data-card 200 3241
+Invalid numeric input 400

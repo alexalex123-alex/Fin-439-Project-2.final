@@ -1,0 +1,26 @@
+{
+  "description": "Assistant reproduction, not original student run evidence",
+  "fixed_inputs": {
+    "target": 0.055,
+    "reserve": 0.03,
+    "risk_limit": 0.08,
+    "cost_bps": 25.0,
+    "equity_haircut": 0.0,
+    "last_36": false,
+    "turnover_limit": 0.2
+  },
+  "results": [
+    {
+      "window": "60 monthly returns",
+      "LQD_annualized_asset_volatility": 0.09851489164474042,
+      "LQD_inverse_volatility_weight": 0.04319947803293582,
+      "inverse_volatility_portfolio_volatility": 0.013556257957397866
+    },
+    {
+      "window": "36 monthly returns",
+      "LQD_annualized_asset_volatility": 0.07728578652815485,
+      "LQD_inverse_volatility_weight": 0.02521560439693043,
+      "inverse_volatility_portfolio_volatility": 0.005979350239089828
+    }
+  ]
+}
