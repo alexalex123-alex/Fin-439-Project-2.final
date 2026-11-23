@@ -1,0 +1,3 @@
+# Preserve exact source bytes so snapshot hashes survive Windows checkouts.
+/prices.csv -text
+/data/cpi-vintage.csv -text
