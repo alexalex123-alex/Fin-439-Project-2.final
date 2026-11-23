@@ -1,0 +1,282 @@
+{
+  "as_of": "2026-11-17",
+  "price_download_claim": "2026-11-01, inherited Lab 15",
+  "price_sha256": "1c8673b2fda28b8ba3245cfc3f4bd5108b290f0438f2f2c07da66abcc42739f2",
+  "base": {
+    "config": {
+      "target": 0.055,
+      "reserve": 0.03,
+      "risk_limit": 0.08,
+      "cost_bps": 25.0,
+      "equity_haircut": 0.0,
+      "last_36": false,
+      "turnover_limit": 0.2
+    },
+    "assets": [
+      {
+        "name": "BIL",
+        "return_type": "estimate",
+        "volatility": 0.004872213111680962,
+        "reserve": true,
+        "return": 0.036671487829486704
+      },
+      {
+        "name": "IEF",
+        "return_type": "estimate",
+        "volatility": 0.07788791474350487,
+        "reserve": false,
+        "return": -0.010805925224792469
+      },
+      {
+        "name": "LQD",
+        "return_type": "estimate",
+        "volatility": 0.09851489164474042,
+        "reserve": false,
+        "return": -0.004150366528382587
+      },
+      {
+        "name": "VT",
+        "return_type": "estimate",
+        "volatility": 0.14839777034225413,
+        "reserve": false,
+        "return": 0.10546768877931748
+      }
+    ],
+    "observations": 60,
+    "first_return": "2021-11-30",
+    "last_return": "2026-10-31",
+    "baselines": {
+      "Equal weight": {
+        "weights": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "gross_return": 0.03179572121390728,
+        "net_return": 0.02929572121390728,
+        "volatility": 0.07493273495460241,
+        "turnover_proxy": 0.5,
+        "rules": {
+          "fully funded / long only": true,
+          "net return proxy >= target": false,
+          "BIL reserve >= minimum": true,
+          "estimated annual volatility <= proposed limit": true,
+          "single rebalance turnover proxy <= limit": false
+        },
+        "modeled_pass": false,
+        "failures": [
+          "net return proxy >= target",
+          "single rebalance turnover proxy <= limit"
+        ],
+        "adoption_verdict": "FAIL \u2014 governance and mandate evidence incomplete"
+      },
+      "Inverse volatility": {
+        "weights": [
+          0.8734822964375067,
+          0.05463995167336163,
+          0.04319947803293582,
+          0.028678273856195813
+        ],
+        "gross_return": 0.03428679776513331,
+        "net_return": 0.03178679776513331,
+        "volatility": 0.013556257957397866,
+        "turnover_proxy": 0.27132172614380423,
+        "rules": {
+          "fully funded / long only": true,
+          "net return proxy >= target": false,
+          "BIL reserve >= minimum": true,
+          "estimated annual volatility <= proposed limit": true,
+          "single rebalance turnover proxy <= limit": false
+        },
+        "modeled_pass": false,
+        "failures": [
+          "net return proxy >= target",
+          "single rebalance turnover proxy <= limit"
+        ],
+        "adoption_verdict": "FAIL \u2014 governance and mandate evidence incomplete"
+      },
+      "60/40 benchmark": {
+        "weights": [
+          0,
+          0,
+          0.4,
+          0.6
+        ],
+        "gross_return": 0.061620466656237445,
+        "net_return": 0.05912046665623744,
+        "volatility": 0.12230495679399611,
+        "turnover_proxy": 0.7,
+        "rules": {
+          "fully funded / long only": true,
+          "net return proxy >= target": true,
+          "BIL reserve >= minimum": false,
+          "estimated annual volatility <= proposed limit": false,
+          "single rebalance turnover proxy <= limit": false
+        },
+        "modeled_pass": false,
+        "failures": [
+          "BIL reserve >= minimum",
+          "estimated annual volatility <= proposed limit",
+          "single rebalance turnover proxy <= limit"
+        ],
+        "adoption_verdict": "FAIL \u2014 governance and mandate evidence incomplete"
+      }
+    },
+    "constrained": {
+      "weights": [
+        0.65,
+        0.0,
+        0.0,
+        0.35
+      ],
+      "gross_return": 0.06075015816192747,
+      "net_return": 0.05825015816192747,
+      "volatility": 0.05282636652007262,
+      "turnover_proxy": 0.04999999999999996,
+      "rules": {
+        "fully funded / long only": true,
+        "net return proxy >= target": true,
+        "BIL reserve >= minimum": true,
+        "estimated annual volatility <= proposed limit": true,
+        "single rebalance turnover proxy <= limit": true
+      },
+      "modeled_pass": true,
+      "failures": [],
+      "adoption_verdict": "FAIL \u2014 governance and mandate evidence incomplete"
+    }
+  },
+  "signal": {
+    "status": "MONITOR ONLY",
+    "observation": "2026-09-01",
+    "index": 336.298,
+    "year_ago_index": 324.245,
+    "yoy": 0.03717250844268993,
+    "age_days": 77,
+    "reference_hurdle": 0.06717250844268993,
+    "reason": "No alpha claim; observed inflation does not replace the 2.5% forward assumption."
+  },
+  "stresses": {
+    "base": {
+      "portfolio": {
+        "weights": [
+          0.65,
+          0.0,
+          0.0,
+          0.35
+        ],
+        "gross_return": 0.06075015816192747,
+        "net_return": 0.05825015816192747,
+        "volatility": 0.05282636652007262,
+        "turnover_proxy": 0.04999999999999996,
+        "rules": {
+          "fully funded / long only": true,
+          "net return proxy >= target": true,
+          "BIL reserve >= minimum": true,
+          "estimated annual volatility <= proposed limit": true,
+          "single rebalance turnover proxy <= limit": true
+        },
+        "modeled_pass": true,
+        "failures": [],
+        "adoption_verdict": "FAIL \u2014 governance and mandate evidence incomplete"
+      },
+      "largest_weight_change": 0.0,
+      "stop": false
+    },
+    "VT estimate minus 1 percentage point": {
+      "portfolio": {
+        "weights": [
+          0.6,
+          0.0,
+          0.0,
+          0.4
+        ],
+        "gross_return": 0.06018996820941902,
+        "net_return": 0.05768996820941902,
+        "volatility": 0.06016243169503849,
+        "turnover_proxy": 0.1,
+        "rules": {
+          "fully funded / long only": true,
+          "net return proxy >= target": true,
+          "BIL reserve >= minimum": true,
+          "estimated annual volatility <= proposed limit": true,
+          "single rebalance turnover proxy <= limit": true
+        },
+        "modeled_pass": true,
+        "failures": [],
+        "adoption_verdict": "FAIL \u2014 governance and mandate evidence incomplete"
+      },
+      "largest_weight_change": 0.050000000000000044,
+      "stop": false
+    },
+    "last 36 returns": {
+      "portfolio": {
+        "weights": [
+          0.9,
+          0.0,
+          0.0,
+          0.1
+        ],
+        "gross_return": 0.05974933026274132,
+        "net_return": 0.057249330262741316,
+        "volatility": 0.012076505005324084,
+        "turnover_proxy": 0.2,
+        "rules": {
+          "fully funded / long only": true,
+          "net return proxy >= target": true,
+          "BIL reserve >= minimum": true,
+          "estimated annual volatility <= proposed limit": true,
+          "single rebalance turnover proxy <= limit": true
+        },
+        "modeled_pass": true,
+        "failures": [],
+        "adoption_verdict": "FAIL \u2014 governance and mandate evidence incomplete"
+      },
+      "largest_weight_change": 0.25,
+      "stop": true
+    },
+    "cost 100 bps": {
+      "portfolio": {
+        "weights": [
+          0.55,
+          0.0,
+          0.0,
+          0.45
+        ],
+        "gross_return": 0.06762977825691055,
+        "net_return": 0.05762977825691055,
+        "volatility": 0.06750420205992645,
+        "turnover_proxy": 0.14999999999999997,
+        "rules": {
+          "fully funded / long only": true,
+          "net return proxy >= target": true,
+          "BIL reserve >= minimum": true,
+          "estimated annual volatility <= proposed limit": true,
+          "single rebalance turnover proxy <= limit": true
+        },
+        "modeled_pass": true,
+        "failures": [],
+        "adoption_verdict": "FAIL \u2014 governance and mandate evidence incomplete"
+      },
+      "largest_weight_change": 0.10000000000000003,
+      "stop": false
+    },
+    "reserve 80%": {
+      "portfolio": null,
+      "largest_weight_change": null,
+      "stop": true
+    },
+    "volatility cap 4%": {
+      "portfolio": null,
+      "largest_weight_change": null,
+      "stop": true
+    },
+    "combined adverse": {
+      "portfolio": null,
+      "largest_weight_change": null,
+      "stop": true
+    }
+  },
+  "recommendation": "REJECT production adoption; permit paper research only, 0% live allocation",
+  "stop": true
+}

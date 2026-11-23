@@ -1,0 +1,8 @@
+{
+  "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=CPIAUCSL&vintage_date=2026-10-31",
+  "retrieved_at": "2026-11-17T16:33:08.714951+00:00",
+  "usable_from": "2026-11-17",
+  "requested_vintage": "2026-10-31",
+  "returned_vintage": "2026-10-23",
+  "sha256": "e17edb7f11b8717ddb569d5e91161e7f2372f4bff43028a8baa2772b34256edd"
+}
